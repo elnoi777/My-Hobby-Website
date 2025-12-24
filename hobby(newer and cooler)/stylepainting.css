@@ -1,4 +1,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+@font-face {
+  font-family: minecraft;
+  src: url(Minecraft.ttf);
+}
+
+@font-face {
+  font-family: KiwiSoda;
+  src: url(KiwiSoda.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -539,5 +550,6 @@ canvas {
         grid-template-columns: 1fr;
     }
 }
+
 
 
