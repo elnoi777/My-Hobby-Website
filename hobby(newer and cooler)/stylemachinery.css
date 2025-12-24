@@ -1,3 +1,5 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 * {
     margin: 0;
     padding: 0;
@@ -15,8 +17,8 @@ body {
     padding: 20px;
     border-radius: 20px;
     display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center;     /* Centers vertically */
+    justify-content: center; 
+    align-items: center;     
 }
 
 .container {
@@ -356,19 +358,19 @@ hr {
 
 
 .gallery {
-    display: flex !important;      /* Force Flexbox */
-    flex-wrap: nowrap !important;  /* PROHIBIT jumping to a new line */
-    justify-content: center;       /* Center the group */
+    display: flex !important;     
+    flex-wrap: nowrap !important;  
+    justify-content: center;      
     gap: 20px;
-    max-width: 1100px;             /* Slightly wider to be safe */
+    max-width: 1100px;          
     margin: 50px auto;
     width: 95%;
 }
 
 .gallery-item {
-    flex: 1;                       /* Force all 3 to share space equally */
-    min-width: 0;                  /* Allows items to shrink to fit */
-    max-width: 320px;              /* Keeps them from getting too huge */
+    flex: 1;                    
+    min-width: 0;                 
+    max-width: 320px;          
     background: linear-gradient(160deg, #1a1830, #2e2c43);
     border-radius: 14px;
     overflow: hidden;
@@ -610,4 +612,5 @@ hr {
     background: #999;
     border-radius: 0 0 5px 5px;
     background: repeating-linear-gradient(#999, #999 3px, #777 3px, #777 6px);
+
 }
