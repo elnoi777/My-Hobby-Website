@@ -6,14 +6,14 @@ const optionsContainer = document.getElementById('dialogueOptions');
 
 const greeting = "My second hobby is painting, start exploring now!";
 let typingInterval;
-let typingActive = false; // Track typing state
+let typingActive = false; 
 let optionsAdded = false;
 
 kidContainer.addEventListener('click', () => {
-    if (typingActive) return; // Safety check
+    if (typingActive) return; 
 
     typingActive = true;
-    kidContainer.style.pointerEvents = 'none'; // ✅ Disable clicks
+    kidContainer.style.pointerEvents = 'none'; 
     img.src = 'sprite(clicked).png';
     clickText.style.display = 'block';
     clickText.textContent = '';
@@ -28,7 +28,7 @@ kidContainer.addEventListener('click', () => {
         if (i === greeting.length) {
             clearInterval(typingInterval);
             typingActive = false;
-            kidContainer.style.pointerEvents = 'auto'; // ✅ Re-enable clicks
+            kidContainer.style.pointerEvents = 'auto'; 
             setTimeout(() => {
                 clickText.style.display = 'none';
                 showDialogueOptions();
@@ -281,4 +281,5 @@ function saveImage() {
     link.href = tempCanvas.toDataURL('image/png');
     link.click();
 }
+
 
